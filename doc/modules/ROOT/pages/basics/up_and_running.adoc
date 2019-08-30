@@ -128,10 +128,9 @@ if you are on Windows and no `clojure` executable is found. Using
 `"powershell"` will Base64 encode the clojure launch command before
 passing it to PowerShell and avoids shell-escaping issues.
 
-== Connect to a Running nREPL Server
+== Launch an nREPL Server
 
-If you have an nREPL server already running, CIDER can connect to
-it. For instance, if you have a Leiningen-based project, go to your
+If you have a Leiningen-based project, go to your
 project's directory in a terminal session and type:
 
 [source,sh]
@@ -157,6 +156,8 @@ $ clj -Sdeps '{:deps {cider/cider-nrepl {:mvn/version "0.21.1"}}}' -m nrepl.cmdl
 
 Alternatively, you can start nREPL either manually or using the facilities
 provided by your project's build tool (Gradle, Maven, etc).
+
+== Connect to a Running nREPL Server
 
 After you get your nREPL server running, go back to Emacs and connect
 to it: kbd:[M-x] `cider-connect` kbd:[RET]. CIDER will
